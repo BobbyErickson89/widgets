@@ -1,5 +1,11 @@
+
+
+
 var adminButton = document.querySelector(".admin-settings-button");
 
+adminButton.addEventListener('click', function() {
+  toggleClass(adminButton.parentNode, '.menu-show')
+});
 
 function toggleClass(element, className) {
   var currentClasses = element.className;
@@ -14,7 +20,7 @@ function toggleClass(element, className) {
 
 
 
-adminButton.onclick = toggleClass(, ".admin-settings-list");
+// adminButton.onclick = toggleClass(, ".admin-settings-list");
 
 
 
